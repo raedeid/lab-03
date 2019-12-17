@@ -20,6 +20,7 @@ Picture.prototype.render = function () {
 let option = []
 
 Picture.prototype.makeOption = function () {
+    // option =[]
     if (!(option.includes(this.keyword))) {
         option.push(this.keyword)
         let new_option = '<option>' + this.keyword + '</option>'
@@ -54,12 +55,20 @@ $('#choice').change(function () {
     })
 })
 
+let clear = function (){
+    option = []
+    $('#choice').empty().end()
+    
+}
+
 $('#page1').click(()=>{
     $('div').hide();
+    clear();
     reader('data/page-1.json')
 });
 $('#page2').click(()=>{
     $('div').hide();
+    clear();
     reader('data/page-2.json')
 });
 
