@@ -1,4 +1,5 @@
 'use strict';
+let templateId = '#picture-template';
 function Picture(image_url, title, description, keyword, horns) {
     this.image_url = image_url;
     this.title = title;
@@ -7,11 +8,11 @@ function Picture(image_url, title, description, keyword, horns) {
     this.hrons = horns
 }
 
-
+console.log(templateId)
 Picture.prototype.render = function () {
     // console.log(this)
     let wholeResult = $('<div> <h2></h2> <img/> <p></p> </div>').clone().addClass(this.keyword);
-    wholeResult.find('h2').text(this.keyword);
+    wholeResult.find('h2').text(this.title);
     wholeResult.find('img').attr('src', this.image_url);
     wholeResult.find('p').text(this.description);
     $('main').append(wholeResult)
@@ -26,7 +27,7 @@ Picture.prototype.makeOption = function () {
         let new_option = '<option>' + this.keyword + '</option>'
         $('#choice').append(new_option)
     }
-
+    
 };
 
 
@@ -38,6 +39,7 @@ let reader = function(file){
             // console.log(obj)
             obj.makeOption();
             obj.render();
+            // obj.toHtml();
             // console.log(Picture.prototype)  
         });
 
@@ -60,15 +62,24 @@ let clear = function (){
     $('#choice').empty().end()
     
 }
+// // Handlebars
+// let toHtml = function() {
+//     let template = $(templateId).html();
+//     let templateRender = Handlebars.compile(template);
+//     console.log('hi')
+//     return templateRender(this);
+//   };
 
 $('#page1').click(()=>{
     $('div').hide();
     clear();
     reader('data/page-1.json')
+    // toHtml();
 });
 $('#page2').click(()=>{
     $('div').hide();
     clear();
     reader('data/page-2.json')
-});
+    // toHtml();
 
+});

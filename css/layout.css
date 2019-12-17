@@ -1,0 +1,70 @@
+header{
+    text-align: center;
+}
+div{
+    float: right;
+    width: 246px;
+    height: 286px;
+    border: 6px solid red;
+    margin: auto;
+   }
+h1{
+    margin-top: 50px;
+    font-size: 60px;
+}
+#choice{
+    margin: 50px 500px 10px 500px;
+height: 50px;
+width: 300px;
+text-align: center;
+}
+p,h2{
+    text-align: center;
+    font-size: large;
+padding: 20px;
+}
+div{
+    padding: 30px;
+    
+}
+#sort{
+    margin: 20px 500px 50px 500px;
+height: 50px;
+width: 300px;
+text-align: center;
+}
+#page1{
+    /* float: left; */
+    margin: 20px 500px 0px 300px;
+height: 50px;
+width: 300px;
+text-align: center;
+background-color: blueviolet;
+color: coral;
+font-size: large;
+}
+#page2{
+    float: right;
+    margin: -50px 300px 50px 600px;
+height: 50px;
+width: 300px;
+text-align: center;
+background-color: blueviolet;
+color: coral;
+font-size: large;
+}
+/* div {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    border: 6px solid red;
+    /* margin: 100px; */
+  /* }
+  div p{
+      margin-top: 150px;
+      margin-right: 180px;
+  }
+  div h2{
+      margin-left: 200px;
+  } */ 
