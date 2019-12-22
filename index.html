@@ -18,19 +18,29 @@
     <form action="">
         <select name="" id="sort">
             <option value="by_deafult">by deafult</option>
-            <option value="title">Title</option>
+            <option value="Title">Title</option>
             <option value="horns">horns</option>
         </select>
     </form>
     <button type="submit" id="page1" value='page1'>page1</button>
     <button type="submit" id="page2" value='page2'>page2</button>
 
-    <main>
+    <main id="output">
 
     </main>
     
-
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.js"></script>
+    <script id ='ourHandle' type="text/x-handlebars-template">
+        <div class={{keyword}}>
+            <h2>{{title}}</h2>
+            <img src={{image_url}} alt="">
+            <p>{{description}}</p>
+            {{{body}}}
+
+        </div>
+
+    </script>
         <script src="js/app.js"></script>
 </body>
 </html>
