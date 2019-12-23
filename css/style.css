@@ -7,3 +7,47 @@ img{
     width: 150px;
     height: 150px;
 }
+#sort,#choice{
+    color: rgb(78, 7, 43);
+    background-color: rgb(95, 60, 151);
+    width: 100px;
+    height: 30px;
+    margin-left: 100px;
+}
+#choice{
+    float: left;
+    margin-left:   350px;
+    margin-right: 350px;
+
+}
+h1{
+   margin-bottom: 50px; 
+   text-align: center;
+}
+#page1,#page2{
+    color: rgb(89, 218, 95);
+    background-color: rgb(97, 9, 85);
+    width: 100px;
+    height: 30px;
+    margin-left: 100px;
+    margin-top: 10px;
+}
+#page1{
+    float: left;
+    margin-left:   530px;
+
+}
+main{
+    display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+    text-align: center;
+    font-size: large;
+    color: crimson;
+    margin: 50px;
+
+}
+body{
+    background-color: darkolivegreen;
+}
+

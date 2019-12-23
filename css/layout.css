@@ -1,0 +1,13 @@
+#output {
+    color: #5995DA;
+    background-color: #D6E9FE;
+    display: flex;
+    justify-content: center;
+  }
+  
+  #output {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+  }
