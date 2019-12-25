@@ -11,12 +11,6 @@ function Picture(image_url, title, description, keyword, horns) {
 }
 Picture.all = []
 Picture.prototype.render = function () {
-    // console.log(this)
-    // let wholeResult = $('<div> <h2></h2> <img/> <p></p> </div>').clone().addClass(this.keyword);
-    // wholeResult.find('h2').text(this.title);
-    // wholeResult.find('img').attr('src', this.image_url);
-    // wholeResult.find('p').text(this.description);
-    // $('main').append(wholeResult);
     let template = $('#ourHandle').html();
     let compile_template = Handlebars.compile(template);
     console.log(compile_template);
@@ -44,7 +38,7 @@ let deploy = function (input) {
         check = true
     }
     input.forEach(element => {
-        let obj = new Picture(element.image_url, element.title, element.description, element.keyword, element.horns)       
+        let obj = new Picture(element.image_url, element.title, element.description, element.keyword, element.horns)
         obj.render();
         if (check) {
             Picture.all.push(obj);
@@ -64,7 +58,7 @@ let reader = function (input) {
         $.get(input, 'json')
             .then(data => {
                 deploy(data)
-                Picture.all.push(data)
+                Picture.all.push(data);
 
             })
 
@@ -125,7 +119,7 @@ let sort_titles = function (arr) {
         }
         return 0;
     });
-    return arr
+    return arr;
 }
 
 
@@ -135,6 +129,7 @@ $('#sort').change(function () {
     console.log(Picture.all)
     // let sort_collection = Picture.all
     clear();
+    $('#choice').empty().end()
     if (new_request === 'horns') {
         sort_horns(Picture.all)
         deploy(Picture.all);
