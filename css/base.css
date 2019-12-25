@@ -1,0 +1,24 @@
+body{
+    background-color: rgb(102, 219, 127);
+}
+main div p{
+    color: rgb(0, 0, 0);
+ }
+ main div h2{
+     color:rgb(128, 3, 57);
+  }
+
+  #sort,#choice{
+    color: rgb(78, 7, 43);
+   background-color: rgb(95, 60, 151);
+ }
+ #page1,#page2{
+    color: rgb(89, 218, 95);
+   background-color: rgb(97, 9, 85);
+ }
+ main{
+      text-align: center;
+    font-size: large;
+    color: crimson;
+
+}

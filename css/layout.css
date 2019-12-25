@@ -1,13 +1,28 @@
-#output {
-    color: #5995DA;
-    background-color: #D6E9FE;
-    display: flex;
-    justify-content: center;
-  }
-  
-  #output {
-    width: 100px;
-    height: 100px;
-    display: flex;
-    justify-content: space-between;
-  }
+div {
+  float: right;
+}
+img{
+width: 150px;
+height: 150px;
+}
+main div{
+  width: 400px;
+  height: 400px;
+}
+h1{
+  margin-bottom: 50px; 
+  text-align: center;
+}
+header{
+  margin-bottom: 200px;
+}
+
+#sort,#choice{
+  width: 100px;
+ height: 30px;
+
+}
+#page1,#page2{
+ width: 100px;
+ height: 30px;
+}
