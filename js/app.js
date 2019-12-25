@@ -135,6 +135,8 @@ $('#sort').change(function () {
     console.log(Picture.all)
     // let sort_collection = Picture.all
     clear();
+    $('#choice').empty().end();
+
     if (new_request === 'horns') {
         sort_horns(Picture.all)
         deploy(Picture.all);
