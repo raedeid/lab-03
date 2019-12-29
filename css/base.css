@@ -1,0 +1,39 @@
+body{
+    background-color: rgb(102, 219, 127);
+}
+main div p{
+    color: rgb(0, 0, 0);
+ }
+ main div h2{
+     color:rgb(128, 3, 57);
+  }
+
+  #sort,#choice{
+    color: rgb(78, 7, 43);
+   background-color: rgb(95, 60, 151);
+ }
+ #page1,#page2{
+    color: rgb(89, 218, 95);
+   background-color: rgb(97, 9, 85);
+ }
+ main{
+      text-align: center;
+    font-size: large;
+    color: crimson;
+
+}
+h1{
+  font-size: xx-large;
+  font-family: fantasy;
+  color: black;
+}
+h2{
+  font-size: large;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgb(161, 10, 10);
+}
+p{
+  font-size: large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(223, 186, 23);
+}
